@@ -1,6 +1,5 @@
 def find_max_occurred_alphabet(string):
     data = dict()
-
     for char in string:
         if char.isalpha():
             if char in data:
