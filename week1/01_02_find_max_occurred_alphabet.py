@@ -10,7 +10,6 @@ def find_max_occurred_alphabet(string):
 
     return max(data, key=data.get)
 
-
 result = find_max_occurred_alphabet
 print("정답 = i 현재 풀이 값 =", result("hello my name is dingcodingco"))
 print("정답 = e 현재 풀이 값 =", result("we love algorithm"))
