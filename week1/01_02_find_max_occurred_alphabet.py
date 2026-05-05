@@ -2,11 +2,11 @@ def find_max_occurred_alphabet(string):
     data = dict()
 
     for char in string:
-        if char == " ": continue
-        if char in data:
-            data[char] += 1
-        else:
-            data[char] = 1
+        if char.isalpha():
+            if char in data:
+                data[char] += 1
+            else:
+                data[char] = 1
 
     return max(data, key=data.get)
 
