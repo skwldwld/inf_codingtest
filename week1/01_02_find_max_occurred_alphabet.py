@@ -1,12 +1,20 @@
 def find_max_occurred_alphabet(string):
-    data = dict()
     alphabet_occurrence_array = [0] * 26
 
     for char in string:
-        if char.isalpha():
-            alphabet_occurrence_array[ord(char) - 97] += 1
+        if not char.isalpha():
+            continue
+        arr_index = ord(char) - ord('a')
+        alphabet_occurrence_array[arr_index] += 1
 
-    return alphabet_occurrence_array[max(alphabet_occurrence_array) - 1]
+    max_num = 0
+    max_idx = 0
+    for idx, num in enumerate(alphabet_occurrence_array):
+        if num > max_num:
+            max_num = num
+            max_idx = idx
+
+    return chr(max_idx + 97)
 
 result = find_max_occurred_alphabet
 print("정답 = i 현재 풀이 값 =", result("hello my name is dingcodingco"))
