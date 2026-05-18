@@ -10,6 +10,7 @@ def find_count_to_turn_out_to_all_zero_or_all_one(string):
     # 붙어있는 수 개수 세기
     # 붙어있는 수끼리 비교. 어떤게 더 적은지
     # 많은 걸 뒤집기
+    # ㅎㅡㅁ냥이 이거 언제 아 푸니
     count_zero = string.count('0')
     count_one = string.count('1')
 
