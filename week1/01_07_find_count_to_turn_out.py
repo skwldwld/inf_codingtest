@@ -1,7 +1,7 @@
-input = "011110"
+# input = "011110"
 # input = "0001111000"
 # input = "0101001010"
-# input = "01010001101"
+input = "01010001101"
 
 
 def cal_repeat(repeat, max_repeat, numlist):
