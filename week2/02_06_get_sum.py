@@ -37,6 +37,7 @@ def get_linked_list_sum(linked_list_1, linked_list_2):
         cur = cur.next
 
     return total1 + total2
+
     # return 1032
 
 
